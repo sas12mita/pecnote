@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/external.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+    <style>
+    ul,li,a{
+    font-size: 20px;
+   color:white;
+    }
+    a:hover{
+background-color: rgb(236, 68, 68);
+    }
+    img{
+      padding-left: 30px;
+    }
+    nav{
+      background-color: rgb(37, 36, 38);
+    }
+    .footer1{
+      color:white;
+      background-color: black;
+    }
+    .sidebar{
+      height: 100vh;
+      background-color: black;
+      padding-top: 50px;
+      
+    }
+    .formstyle1{
+  background-color: rgb(171, 184, 216);
+  width: 330px;
+  height: 410px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+  padding: 10px;
+}
+ 
+   
+  </style>
+</head>
+
+<body>
+{{>dashboardnav}}
+<div class="container-fluid">
+
+<div class="row">
+  <div class="col-md-3 sidebar">
+<center>
+    <ul class="list-unstyled">
+        <br><br>
+    <li><a class="nav-link" href="#">Upload Softcopy Note</a></li><br><br>
+    <li><a class="nav-link" chref="#">View Softwcopy Note</a></li><br><br>
+    <li><a class="nav-link"  href="#">Upload Hardcopy Note</a></li><br><br>
+    <li><a class="nav-link" href="#">View Hardcopy Note</a></li><br>
+    </ul>
+    </center>
+  </div>
+
+  <div class="col-md-9">
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <br><br><br>
+        <center><h3>Upload Softcopy Note</h3>
+<form class="formstyle1" action="/uploadnote" method="POST">
+  <div class="form-group">
+    <label for="exampleInputname1">Subject Name</label>
+    <input type="text" class="form-control" name="subname"
+    aria-describedby="nameHelp" placeholder="Enter subject name">  </div><br>
+    <div class="form-group">
+    <label for="exampleInputEmail1">facaulty</label>
+    <input type="text" class="form-control" name="faculty"
+    aria-describedby="emailHelp" placeholder="Enter faculty">  </div><br>
+    <div class="form-group">
+    <label for="exampleInputusername">Semester</label>
+    <input type="text" class="form-control" name="username"
+    aria-describedby="nameHelp" placeholder="eg. I , IV etc.">  </div><br>
+    <div class="form-group">
+    <label for="exampleInputpassword">File Link</label>
+    <input type="text" class="form-control" name="link"
+    aria-describedby="nameHelp" placeholder="Enter drive link">  </div><br>
+ <center> <button type="submit" class="btn btn-success">Submit</button>
+
+</center></form>
+
+    </div>
+    <div class="col-md-3"></div>
+</div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: contact@yourwebsite.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <center><h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="nav-link" href="#">Home</a></li>
+                        <li><a class="nav-link" chref="#">Services</a></li>
+                        <li><a class="nav-link"  href="#">About Us</a></li>
+                        <li><a class="nav-link" href="#">Contact</a></li>
+                    </ul></center>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    
+                <i class="bi bi-facebook" style="font-size: 35px;" ></i>
+                <i class="bi bi-instagram" style="font-size:35px;" ></i>
+                <i class="bi bi-twitter" style="font-size: 35px;"></i>
+                
+                </div>
+            </div>
+        </div>
+    </footer><!-- footer end-->
+
+    <script src="..jq/jquery.js" type="text/javascript"></script> 
+    <script src="..js/bootstrap.js" type="text/javascript"></script> 
+</body>
+</html>
